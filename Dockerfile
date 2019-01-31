@@ -25,11 +25,10 @@ RUN export uid=1000 gid=1000 && \
     chmod 0440 /etc/sudoers.d/developer && \
     chown ${uid}:${gid} -R /home/developer
 
-USER developer
-ENV HOME /home/developer
 
 COPY l_openvino_toolkit* /workdir/l_openvino_toolkit
 ARG INSTALL_DIR=/opt/intel/computer_vision_sdk
+
 # installing OpenVINO dependencies
 RUN cd /workdir/l_openvino_toolkit && \
     ./install_cv_sdk_dependencies.sh
@@ -41,4 +40,6 @@ RUN cd /workdir/l_openvino_toolkit && \
 
 RUN echo "source /opt/intel/computer_vision_sdk/bin/setupvars.sh" >> ~/.bashrc
 
+USER developer
+ENV HOME /home/developer
 CMD ["/bin/bash"]
