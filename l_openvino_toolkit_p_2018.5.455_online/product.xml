@@ -1,0 +1,30 @@
+<root>
+    <file perm="0644" size="79937518" path="/rpm" name="intel-algorithms_centos-2018.5.455-2018.5-455.noarch.rpm" cksum="cfdb1804dee242bff1167932cabf51c7d1bf99fbccb607b0ce19de0307487772"/>
+    <file perm="0644" size="79933603" path="/rpm" name="intel-algorithms_ubuntu-2018.5.455-2018.5-455.noarch.rpm" cksum="981ec73ac762d2bda727be016304417158867e0619d5bbed9490b8ca969921bb"/>
+    <file perm="0644" size="79941490" path="/rpm" name="intel-algorithms_yocto-2018.5.455-2018.5-455.noarch.rpm" cksum="1cd9ebe69655ef4541215fee91b2294f456ea8cb981dbaf2ce2ac8de7aa5ae1d"/>
+    <file perm="0644" size="2093" path="/rpm" name="intel-dldt_base-2018.5.455-2018.5-455.noarch.rpm" cksum="dd52ad7fb27d21d62864d099a43f4e07151c714bc91ef7e5040c45c482e9195e"/>
+    <file perm="0644" size="6645446" path="/rpm" name="intel-docs-2018.5.455-2018.5-455.noarch.rpm" cksum="36df133dafeafd991077d23593b802895ba2fed94fd16e0ced255d381547b963"/>
+    <file perm="0644" size="94185096" path="/rpm" name="intel-gfx_driver-2018.5.455-2018.5-455.noarch.rpm" cksum="88a43b5b5996829eadd69afb35508fe187bf31f421a680a24ed23955bc94e3b9"/>
+    <file perm="0644" size="26814093" path="/rpm" name="intel-ie_samples-2018.5.455-2018.5-455.noarch.rpm" cksum="8100b2992f048334d67fa57773a2703f0d5023b10d32bc9fed69a865dbf40876"/>
+    <file perm="0644" size="7417797" path="/rpm" name="intel-inference_engine_cpu-2018.5.455-2018.5-455.noarch.rpm" cksum="d10d60b4207a1781da80458bf78ff3012646b9d61ce3f98fc036a3f06d8de273"/>
+    <file perm="0644" size="1147981" path="/rpm" name="intel-inference_engine_gna-2018.5.455-2018.5-455.noarch.rpm" cksum="10a2f121dc3950c168f50e911af4d8c61d8a622cbed37e3a0cc2729c55a3df2d"/>
+    <file perm="0644" size="3882970" path="/rpm" name="intel-inference_engine_gpu-2018.5.455-2018.5-455.noarch.rpm" cksum="5a4e44d67e65f04263f1f8e0c2ca0f93ab0173b27d61b0133462ce114ed11fa6"/>
+    <file perm="0644" size="4688573" path="/rpm" name="intel-inference_engine_hddl-2018.5.455-2018.5-455.noarch.rpm" cksum="6511ddcc8dbc9d62dc43875de0bd02e70936cc837f415f26b23fa0b3a5dbb574"/>
+    <file perm="0644" size="20191208" path="/rpm" name="intel-inference_engine_rt-2018.5.455-2018.5-455.noarch.rpm" cksum="fddb7590d1abee257056c8477d2703fd38bdde2da586b484b554a7d13de46a8a"/>
+    <file perm="0644" size="4322392" path="/rpm" name="intel-inference_engine_sdk-2018.5.455-2018.5-455.noarch.rpm" cksum="e9bd7229f163e83e3ffadef5149493e1ac9cf2126c39bd2e17ad581a09dc0157"/>
+    <file perm="0644" size="5370542" path="/rpm" name="intel-inference_engine_vpu-2018.5.455-2018.5-455.noarch.rpm" cksum="6ed50a07115113a5ee4538235ab67181ea18a27c8bcccbbc271e0887bdb65869"/>
+    <file perm="0644" size="36220476" path="/rpm" name="intel-media_stack-2018.5.455-2018.5-455.noarch.rpm" cksum="9a6d6c6ff6d1acb4e8a0e745267fb2e0994144d4ede1fec8a610acbd5dc77609"/>
+    <file perm="0644" size="438209" path="/rpm" name="intel-model_optimizer-2018.5.455-2018.5-455.noarch.rpm" cksum="8b021e19f5d51bf6b86f2a5fc00ab536302becd2ce25d954aa4a5ffe7cfca186"/>
+    <file perm="0644" size="296768815" path="/rpm" name="intel-models-2018.5.455-2018.5-455.noarch.rpm" cksum="ef37dcbbbc05f3388e05ab3c072ec0ae0ddaeb7f6f6d766a124ddf2b6c41be3b"/>
+    <file perm="0644" size="2444872" path="/rpm" name="intel-opencv-2018.5.455-2018.5-455.noarch.rpm" cksum="e72afd93e36ae551a4bf0bededf1dec55bae3ab77a6b51c32fdbed9d0d15478b"/>
+    <file perm="0644" size="50658435" path="/rpm" name="intel-opencv_centos-2018.5.455-2018.5-455.noarch.rpm" cksum="4433fd9a18757fe1d9752ac03998c0be37fc6c74f76f72c17f0025b6f2514eba"/>
+    <file perm="0644" size="50385937" path="/rpm" name="intel-opencv_ubuntu_16_rel-2018.5.455-2018.5-455.noarch.rpm" cksum="27a6d6b5ebc867ce8448ab48ef27f6c03614fbd9703faf6b002fe84741e27b65"/>
+    <file perm="0644" size="50546992" path="/rpm" name="intel-opencv_ubuntu_18_rel-2018.5.455-2018.5-455.noarch.rpm" cksum="8edcb671f8c56a65ff0f44f8f921f2a38203735feda02c49c5b7c37f29b1bace"/>
+    <file perm="0644" size="50604299" path="/rpm" name="intel-opencv_yocto_mr3_rel-2018.5.455-2018.5-455.noarch.rpm" cksum="4dc03de6c4ae9204aef1ac4fd30ce1ff7c051c71bbddfa9d072cd64efbf45be9"/>
+    <file perm="0644" size="2413" path="/rpm" name="intel-openvino_base-2018.5.455-2018.5-455.noarch.rpm" cksum="4da156eb75c3b7cc0541feb87aff2bb2f68723eca9677d1fdf991db7f918ebaa"/>
+    <file perm="0644" size="16366893" path="/rpm" name="intel-openvino_base-pset-2018.5.455-2018.5-455.noarch.rpm" cksum="81475610d10a08dea21c60e8469fd4928c1f73e449f775c26a39d0b7df3b61e4"/>
+    <file perm="0644" size="184257695" path="/rpm" name="intel-openvx_centos-2018.5.455-2018.5-455.noarch.rpm" cksum="10dac80569db1a62878449e3b4d09c856f4ef4430919ad6dae991435813b950f"/>
+    <file perm="0644" size="183773124" path="/rpm" name="intel-openvx_ubuntu-2018.5.455-2018.5-455.noarch.rpm" cksum="a5f26cd04fdfd4f91b3ac6f057dea33dd10c395927b9d628d908190c3c20e281"/>
+    <file perm="0644" size="186346087" path="/rpm" name="intel-openvx_yocto-2018.5.455-2018.5-455.noarch.rpm" cksum="d63cd933347a3f5debb83442cc9e4749b6ceb454a6ac2c23a58b9c04c45b8287"/>
+    <file perm="0644" size="9195" path="/rpm" name="intel-setupvars-2018.5.455-2018.5-455.noarch.rpm" cksum="bc935f9b41b07df6b839663b8f29717657f5175151b1c2a7d1616c1539666e76"/>
+</root>

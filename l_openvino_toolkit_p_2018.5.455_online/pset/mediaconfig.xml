@@ -1,0 +1,892 @@
+<MediaConfig>
+    <Name>${SUITE_NAME}</Name>
+    <Description/>
+    <GUID>1548351989713</GUID>
+    <Env/>
+    <Product platform="INTEL64" id="1">
+        <Name>OpenVINO Core</Name>
+        <Description/>
+        <Layers>
+            <phonehome>
+                <HideActivateButton>0</HideActivateButton>
+                <HideOnLicenseTab>0</HideOnLicenseTab>
+            </phonehome>
+        </Layers>
+        <InstallDir>${OPENVINO_ROOT}</InstallDir>
+        <Component platform="INTEL64" invisible="1" id="1" depend="" mandatory="1" core="1">
+            <Name>OPENVINO_BASE</Name>
+            <Description/>
+            <Selected>1</Selected>
+            <Layers>
+                <phonehome>
+                    <HideActivateButton>0</HideActivateButton>
+                    <HideOnLicenseTab>0</HideOnLicenseTab>
+                </phonehome>
+            </Layers>
+            <RPMProductFamily>intel-openvino_base</RPMProductFamily>
+            <RPMProductCode>intel-openvino_base-2018.5.455</RPMProductCode>
+            <Version>2018.5</Version>
+            <RPMProductRelease>455</RPMProductRelease>
+            <RPMProductArch>noarch</RPMProductArch>
+            <NONRPMProductCode>intel-openvino_base-2018.5.455-2018.5-455.noarch.rpm</NONRPMProductCode>
+            <Abbr>intel-openvino_base__noarch</Abbr>
+            <Data>1</Data>
+            <Type>rpm</Type>
+            <RPMFileDir>${PACKAGE_DIR}/rpm</RPMFileDir>
+        </Component>
+        <Component platform="INTEL64" invisible="1" id="2" depend="" mandatory="1" core="0">
+            <Name>DLDT_BASE</Name>
+            <Description/>
+            <Selected>1</Selected>
+            <Layers>
+                <phonehome>
+                    <HideActivateButton>0</HideActivateButton>
+                    <HideOnLicenseTab>0</HideOnLicenseTab>
+                </phonehome>
+            </Layers>
+            <RPMProductFamily>intel-dldt_base</RPMProductFamily>
+            <RPMProductCode>intel-dldt_base-2018.5.455</RPMProductCode>
+            <Version>2018.5</Version>
+            <RPMProductRelease>455</RPMProductRelease>
+            <RPMProductArch>noarch</RPMProductArch>
+            <NONRPMProductCode>intel-dldt_base-2018.5.455-2018.5-455.noarch.rpm</NONRPMProductCode>
+            <Abbr>intel-dldt_base__noarch</Abbr>
+            <Data>1</Data>
+            <Type>rpm</Type>
+            <RPMFileDir>${PACKAGE_DIR}/rpm</RPMFileDir>
+        </Component>
+        <Component platform="INTEL64" invisible="1" id="3" depend="" mandatory="1" core="0">
+            <Name>OPENVINO_FPGA</Name>
+            <Description/>
+            <Selected>1</Selected>
+            <Layers>
+                <phonehome>
+                    <HideActivateButton>0</HideActivateButton>
+                    <HideOnLicenseTab>0</HideOnLicenseTab>
+                </phonehome>
+            </Layers>
+            <RPMProductFamily>intel-openvino_fpga</RPMProductFamily>
+            <RPMProductCode>intel-openvino_fpga-2018.0.555</RPMProductCode>
+            <Version>2018.0</Version>
+            <RPMProductRelease>555</RPMProductRelease>
+            <RPMProductArch>noarch</RPMProductArch>
+            <NONRPMProductCode>intel-openvino_fpga-2018.0.555-2018.0-555.noarch.rpm</NONRPMProductCode>
+            <Abbr>intel-openvino_fpga__noarch</Abbr>
+            <Data>1</Data>
+            <Type>rpm</Type>
+            <RPMFileDir>${PACKAGE_DIR}/rpm</RPMFileDir>
+        </Component>
+        <Component platform="INTEL64" invisible="1" id="4" depend="" mandatory="1" core="0">
+            <Name>Environment variables</Name>
+            <Description/>
+            <Selected>1</Selected>
+            <Layers>
+                <phonehome>
+                    <HideActivateButton>0</HideActivateButton>
+                    <HideOnLicenseTab>0</HideOnLicenseTab>
+                </phonehome>
+            </Layers>
+            <RPMProductFamily>intel-setupvars</RPMProductFamily>
+            <RPMProductCode>intel-setupvars-2018.5.455</RPMProductCode>
+            <Version>2018.5</Version>
+            <RPMProductRelease>455</RPMProductRelease>
+            <RPMProductArch>noarch</RPMProductArch>
+            <NONRPMProductCode>intel-setupvars-2018.5.455-2018.5-455.noarch.rpm</NONRPMProductCode>
+            <Abbr>intel-setupvars__noarch</Abbr>
+            <Data>1</Data>
+            <Type>rpm</Type>
+            <RPMFileDir>${PACKAGE_DIR}/rpm</RPMFileDir>
+            <Shared>${SHARED_SUITE}</Shared>
+        </Component>
+        <Component platform="INTEL64" invisible="1" id="5" depend="" mandatory="1" core="0">
+            <Name>Environment variables</Name>
+            <Description/>
+            <Selected>1</Selected>
+            <Layers>
+                <phonehome>
+                    <HideActivateButton>0</HideActivateButton>
+                    <HideOnLicenseTab>0</HideOnLicenseTab>
+                </phonehome>
+            </Layers>
+            <RPMProductFamily>intel-setupvars_fpga</RPMProductFamily>
+            <RPMProductCode>intel-setupvars_fpga-2018.0.555</RPMProductCode>
+            <Version>2018.0</Version>
+            <RPMProductRelease>555</RPMProductRelease>
+            <RPMProductArch>noarch</RPMProductArch>
+            <NONRPMProductCode>intel-setupvars_fpga-2018.0.555-2018.0-555.noarch.rpm</NONRPMProductCode>
+            <Abbr>intel-setupvars_fpga__noarch</Abbr>
+            <Data>1</Data>
+            <Type>rpm</Type>
+            <RPMFileDir>${PACKAGE_DIR}/rpm</RPMFileDir>
+            <Shared>${SHARED_SUITE}</Shared>
+        </Component>
+    </Product>
+    <Product platform="INTEL64" id="2">
+        <Name>Inference Engine</Name>
+        <Description>An execution engine that delivers inference solutions on embedded platforms. Provides an embedded-friendly scoring solution that optimizes execution for target hardware.</Description>
+        <Layers>
+            <phonehome>
+                <HideActivateButton>0</HideActivateButton>
+                <HideOnLicenseTab>0</HideOnLicenseTab>
+            </phonehome>
+        </Layers>
+        <InstallDir>${OPENVINO_ROOT}</InstallDir>
+        <Component platform="INTEL64" invisible="0" id="1" depend="2.2" mandatory="0" core="0">
+            <Name>Inference Engine Development Kit</Name>
+            <Description>Inference Engine header files</Description>
+            <Selected>1</Selected>
+            <Layers>
+                <phonehome>
+                    <HideActivateButton>0</HideActivateButton>
+                    <HideOnLicenseTab>0</HideOnLicenseTab>
+                </phonehome>
+            </Layers>
+            <RPMProductFamily>intel-inference_engine_sdk</RPMProductFamily>
+            <RPMProductCode>intel-inference_engine_sdk-2018.5.455</RPMProductCode>
+            <Version>2018.5</Version>
+            <RPMProductRelease>455</RPMProductRelease>
+            <RPMProductArch>noarch</RPMProductArch>
+            <NONRPMProductCode>intel-inference_engine_sdk-2018.5.455-2018.5-455.noarch.rpm</NONRPMProductCode>
+            <Abbr>intel-inference_engine_sdk__noarch</Abbr>
+            <Data>15</Data>
+            <Type>rpm</Type>
+            <RPMFileDir>${PACKAGE_DIR}/rpm</RPMFileDir>
+            <Shared>${SHARED_SUITE}</Shared>
+        </Component>
+        <Component platform="INTEL64" invisible="1" id="2" depend="" mandatory="0" core="0">
+            <Name>Inference Engine Samples</Name>
+            <Description>Inference Engine Samples</Description>
+            <Selected>1</Selected>
+            <Layers>
+                <phonehome>
+                    <HideActivateButton>0</HideActivateButton>
+                    <HideOnLicenseTab>0</HideOnLicenseTab>
+                </phonehome>
+            </Layers>
+            <RPMProductFamily>intel-ie_samples</RPMProductFamily>
+            <RPMProductCode>intel-ie_samples-2018.5.455</RPMProductCode>
+            <Version>2018.5</Version>
+            <RPMProductRelease>455</RPMProductRelease>
+            <RPMProductArch>noarch</RPMProductArch>
+            <NONRPMProductCode>intel-ie_samples-2018.5.455-2018.5-455.noarch.rpm</NONRPMProductCode>
+            <Abbr>intel-ie_samples__noarch</Abbr>
+            <Data>32</Data>
+            <Type>rpm</Type>
+            <RPMFileDir>${PACKAGE_DIR}/rpm</RPMFileDir>
+            <Shared>${SHARED_SUITE}</Shared>
+        </Component>
+        <Component platform="INTEL64" invisible="1" id="3" depend="" mandatory="1" core="0">
+            <Name>Inference Engine RT</Name>
+            <Description>Inference Engine RT</Description>
+            <Selected>1</Selected>
+            <Layers>
+                <phonehome>
+                    <HideActivateButton>0</HideActivateButton>
+                    <HideOnLicenseTab>0</HideOnLicenseTab>
+                </phonehome>
+            </Layers>
+            <RPMProductFamily>intel-inference_engine_rt</RPMProductFamily>
+            <RPMProductCode>intel-inference_engine_rt-2018.5.455</RPMProductCode>
+            <Version>2018.5</Version>
+            <RPMProductRelease>455</RPMProductRelease>
+            <RPMProductArch>noarch</RPMProductArch>
+            <NONRPMProductCode>intel-inference_engine_rt-2018.5.455-2018.5-455.noarch.rpm</NONRPMProductCode>
+            <Abbr>intel-inference_engine_rt__noarch</Abbr>
+            <Data>84</Data>
+            <Type>rpm</Type>
+            <RPMFileDir>${PACKAGE_DIR}/rpm</RPMFileDir>
+            <Shared>${SHARED_SUITE}</Shared>
+        </Component>
+        <Component platform="INTEL64" invisible="0" id="4" depend="" mandatory="0" core="0">
+            <Name>Inference Engine Runtime for Intel® CPU</Name>
+            <Description>Inference Engine pre-build binaries that enables performing inference tasks on Intel® CPUs</Description>
+            <Selected>1</Selected>
+            <Layers>
+                <phonehome>
+                    <HideActivateButton>0</HideActivateButton>
+                    <HideOnLicenseTab>0</HideOnLicenseTab>
+                </phonehome>
+            </Layers>
+            <RPMProductFamily>intel-inference_engine_cpu</RPMProductFamily>
+            <RPMProductCode>intel-inference_engine_cpu-2018.5.455</RPMProductCode>
+            <Version>2018.5</Version>
+            <RPMProductRelease>455</RPMProductRelease>
+            <RPMProductArch>noarch</RPMProductArch>
+            <NONRPMProductCode>intel-inference_engine_cpu-2018.5.455-2018.5-455.noarch.rpm</NONRPMProductCode>
+            <Abbr>intel-inference_engine_cpu__noarch</Abbr>
+            <Data>32</Data>
+            <Type>rpm</Type>
+            <RPMFileDir>${PACKAGE_DIR}/rpm</RPMFileDir>
+            <Shared>${SHARED_SUITE}</Shared>
+        </Component>
+        <Component platform="INTEL64" invisible="0" id="5" depend="" mandatory="0" core="0">
+            <Name>Inference Engine Runtime for Intel® Processor Graphics</Name>
+            <Description>Inference Engine pre-build binaries that enables performing inference tasks on Intel® Processor Graphics</Description>
+            <Selected>1</Selected>
+            <Layers>
+                <phonehome>
+                    <HideActivateButton>0</HideActivateButton>
+                    <HideOnLicenseTab>0</HideOnLicenseTab>
+                </phonehome>
+            </Layers>
+            <RPMProductFamily>intel-inference_engine_gpu</RPMProductFamily>
+            <RPMProductCode>intel-inference_engine_gpu-2018.5.455</RPMProductCode>
+            <Version>2018.5</Version>
+            <RPMProductRelease>455</RPMProductRelease>
+            <RPMProductArch>noarch</RPMProductArch>
+            <NONRPMProductCode>intel-inference_engine_gpu-2018.5.455-2018.5-455.noarch.rpm</NONRPMProductCode>
+            <Abbr>intel-inference_engine_gpu__noarch</Abbr>
+            <Data>17</Data>
+            <Type>rpm</Type>
+            <RPMFileDir>${PACKAGE_DIR}/rpm</RPMFileDir>
+            <Shared>${SHARED_SUITE}</Shared>
+        </Component>
+        <Component platform="INTEL64" invisible="0" id="6" depend="" mandatory="0" core="0">
+            <Name>Inference Engine Runtime for Intel® Movidius™ VPU</Name>
+            <Description>Inference Engine pre-build binaries that enables performing inference tasks on Intel® Movidius™ VPU devices including Intel® Movidius™ Neural Compute Stick and Intel® Neural Compute Stick 2</Description>
+            <Selected>1</Selected>
+            <Layers>
+                <phonehome>
+                    <HideActivateButton>0</HideActivateButton>
+                    <HideOnLicenseTab>0</HideOnLicenseTab>
+                </phonehome>
+            </Layers>
+            <RPMProductFamily>intel-inference_engine_vpu</RPMProductFamily>
+            <RPMProductCode>intel-inference_engine_vpu-2018.5.455</RPMProductCode>
+            <Version>2018.5</Version>
+            <RPMProductRelease>455</RPMProductRelease>
+            <RPMProductArch>noarch</RPMProductArch>
+            <NONRPMProductCode>intel-inference_engine_vpu-2018.5.455-2018.5-455.noarch.rpm</NONRPMProductCode>
+            <Abbr>intel-inference_engine_vpu__noarch</Abbr>
+            <Data>14</Data>
+            <Type>rpm</Type>
+            <RPMFileDir>${PACKAGE_DIR}/rpm</RPMFileDir>
+            <Shared>${SHARED_SUITE}</Shared>
+        </Component>
+        <Component platform="INTEL64" invisible="0" id="7" depend="" mandatory="0" core="0">
+            <Name>Inference Engine Runtime for Intel® Gaussian Neural Accelerator</Name>
+            <Description>Inference Engine pre-build binaries that enables performing inference tasks on Intel® Gaussian Neural Accelerator</Description>
+            <Selected>1</Selected>
+            <Layers>
+                <phonehome>
+                    <HideActivateButton>0</HideActivateButton>
+                    <HideOnLicenseTab>0</HideOnLicenseTab>
+                </phonehome>
+            </Layers>
+            <RPMProductFamily>intel-inference_engine_gna</RPMProductFamily>
+            <RPMProductCode>intel-inference_engine_gna-2018.5.455</RPMProductCode>
+            <Version>2018.5</Version>
+            <RPMProductRelease>455</RPMProductRelease>
+            <RPMProductArch>noarch</RPMProductArch>
+            <NONRPMProductCode>intel-inference_engine_gna-2018.5.455-2018.5-455.noarch.rpm</NONRPMProductCode>
+            <Abbr>intel-inference_engine_gna__noarch</Abbr>
+            <Data>4</Data>
+            <Type>rpm</Type>
+            <RPMFileDir>${PACKAGE_DIR}/rpm</RPMFileDir>
+            <Shared>${SHARED_SUITE}</Shared>
+        </Component>
+        <Component platform="INTEL64" invisible="0" id="8" depend="" mandatory="0" core="0">
+            <Name>Inference Engine Runtime for Intel® FPGA</Name>
+            <Description>Inference Engine pre-build binaries that enables inference on Intel® FPGA devices including Intel® Arria® 10 GX FPGA Development Kit and the Intel® Programmable Acceleration Card with Intel® Arria® 10 GX FPGA</Description>
+            <Selected>1</Selected>
+            <Layers>
+                <phonehome>
+                    <HideActivateButton>0</HideActivateButton>
+                    <HideOnLicenseTab>0</HideOnLicenseTab>
+                </phonehome>
+            </Layers>
+            <RPMProductFamily>intel-inference_engine_dlia</RPMProductFamily>
+            <RPMProductCode>intel-inference_engine_dlia-2018.0.555</RPMProductCode>
+            <Version>2018.0</Version>
+            <RPMProductRelease>555</RPMProductRelease>
+            <RPMProductArch>noarch</RPMProductArch>
+            <NONRPMProductCode>intel-inference_engine_dlia-2018.0.555-2018.0-555.noarch.rpm</NONRPMProductCode>
+            <Abbr>intel-inference_engine_dlia__noarch</Abbr>
+            <Data>1</Data>
+            <Type>rpm</Type>
+            <RPMFileDir>${PACKAGE_DIR}/rpm</RPMFileDir>
+            <Shared>${SHARED_SUITE}</Shared>
+        </Component>
+        <Component condition="${SYS_NAME} = ubuntu OR ${PSET_MODE} = uninstall" platform="INTEL64" invisible="0" id="9" depend="" mandatory="0" core="0">
+            <Name>Inference Engine Runtime for Intel® Vision Accelerator Design with Intel® Movidius™ VPUs</Name>
+            <Description>Inference Engine pre-build binaries that enables performing inference tasks on Intel® Vision Accelerator Design with Intel® Movidius™ VPUs</Description>
+            <Selected>1</Selected>
+            <Layers>
+                <phonehome>
+                    <HideActivateButton>0</HideActivateButton>
+                    <HideOnLicenseTab>0</HideOnLicenseTab>
+                </phonehome>
+            </Layers>
+            <RPMProductFamily>intel-inference_engine_hddl</RPMProductFamily>
+            <RPMProductCode>intel-inference_engine_hddl-2018.5.455</RPMProductCode>
+            <Version>2018.5</Version>
+            <RPMProductRelease>455</RPMProductRelease>
+            <RPMProductArch>noarch</RPMProductArch>
+            <NONRPMProductCode>intel-inference_engine_hddl-2018.5.455-2018.5-455.noarch.rpm</NONRPMProductCode>
+            <Abbr>intel-inference_engine_hddl__noarch</Abbr>
+            <Data>15</Data>
+            <Type>rpm</Type>
+            <RPMFileDir>${PACKAGE_DIR}/rpm</RPMFileDir>
+            <Shared>${SHARED_SUITE}</Shared>
+        </Component>
+    </Product>
+    <Product platform="INTEL64" id="3">
+        <Name>Model Optimizer</Name>
+        <Description>A command-line tool that imports trained models from popular deep learning frameworks and enhances them for improved execution, storage and transmission.</Description>
+        <Layers>
+            <phonehome>
+                <HideActivateButton>0</HideActivateButton>
+                <HideOnLicenseTab>0</HideOnLicenseTab>
+            </phonehome>
+        </Layers>
+        <InstallDir>${OPENVINO_ROOT}</InstallDir>
+        <Component platform="INTEL64" invisible="0" id="1" depend="" mandatory="0" core="0">
+            <Name>Model Optimizer Tool</Name>
+            <Description>A command-line tool that imports trained models from popular deep learning frameworks and enhances them for improved execution, storage and transmission.</Description>
+            <Selected>1</Selected>
+            <Layers>
+                <phonehome>
+                    <HideActivateButton>0</HideActivateButton>
+                    <HideOnLicenseTab>0</HideOnLicenseTab>
+                </phonehome>
+            </Layers>
+            <RPMProductFamily>intel-model_optimizer</RPMProductFamily>
+            <RPMProductCode>intel-model_optimizer-2018.5.455</RPMProductCode>
+            <Version>2018.5</Version>
+            <RPMProductRelease>455</RPMProductRelease>
+            <RPMProductArch>noarch</RPMProductArch>
+            <NONRPMProductCode>intel-model_optimizer-2018.5.455-2018.5-455.noarch.rpm</NONRPMProductCode>
+            <Abbr>intel-model_optimizer__noarch</Abbr>
+            <Data>3</Data>
+            <Type>rpm</Type>
+            <RPMFileDir>${PACKAGE_DIR}/rpm</RPMFileDir>
+            <Shared>${SHARED_SUITE}</Shared>
+        </Component>
+    </Product>
+    <Product platform="INTEL64" id="4">
+        <Name>OpenCV*</Name>
+        <Description>An Intel-optimized API that is used for processing general computer vision-related flows and for providing analytics and machine learning capabilities on Intel® hardware.</Description>
+        <Layers>
+            <phonehome>
+                <HideActivateButton>0</HideActivateButton>
+                <HideOnLicenseTab>0</HideOnLicenseTab>
+            </phonehome>
+        </Layers>
+        <InstallDir>${OPENVINO_ROOT}</InstallDir>
+        <Component platform="INTEL64" invisible="1" id="1" depend="" mandatory="0" core="0">
+            <Name>OpenCV core</Name>
+            <Description/>
+            <Selected>1</Selected>
+            <Layers>
+                <phonehome>
+                    <HideActivateButton>0</HideActivateButton>
+                    <HideOnLicenseTab>0</HideOnLicenseTab>
+                </phonehome>
+            </Layers>
+            <RPMProductFamily>intel-opencv</RPMProductFamily>
+            <RPMProductCode>intel-opencv-2018.5.455</RPMProductCode>
+            <Version>2018.5</Version>
+            <RPMProductRelease>455</RPMProductRelease>
+            <RPMProductArch>noarch</RPMProductArch>
+            <NONRPMProductCode>intel-opencv-2018.5.455-2018.5-455.noarch.rpm</NONRPMProductCode>
+            <Abbr>intel-opencv__noarch</Abbr>
+            <Data>16</Data>
+            <Type>rpm</Type>
+            <RPMFileDir>${PACKAGE_DIR}/rpm</RPMFileDir>
+            <Shared>${SHARED_SUITE}</Shared>
+        </Component>
+        <Component condition="( ${SYS_NAME} = ubuntu AND ${DISTRIB_CODENAME} = xenial ) OR ${PSET_MODE} = uninstall" platform="INTEL64" invisible="0" id="2" depend="4.1" mandatory="0" core="0">
+            <Name>OpenCV* Libraries</Name>
+            <Description>An Intel-optimized API that is used for processing general computer vision-related flows and for providing analytics and machine learning capabilities on Intel® hardware.</Description>
+            <Selected>1</Selected>
+            <Layers>
+                <phonehome>
+                    <HideActivateButton>0</HideActivateButton>
+                    <HideOnLicenseTab>0</HideOnLicenseTab>
+                </phonehome>
+            </Layers>
+            <RPMProductFamily>intel-opencv_ubuntu_16_rel</RPMProductFamily>
+            <RPMProductCode>intel-opencv_ubuntu_16_rel-2018.5.455</RPMProductCode>
+            <Version>2018.5</Version>
+            <RPMProductRelease>455</RPMProductRelease>
+            <RPMProductArch>noarch</RPMProductArch>
+            <NONRPMProductCode>intel-opencv_ubuntu_16_rel-2018.5.455-2018.5-455.noarch.rpm</NONRPMProductCode>
+            <Abbr>intel-opencv_ubuntu_16_rel__noarch</Abbr>
+            <Data>135</Data>
+            <Type>rpm</Type>
+            <RPMFileDir>${PACKAGE_DIR}/rpm</RPMFileDir>
+            <Shared>${SHARED_SUITE}</Shared>
+        </Component>
+        <Component condition="${SYS_NAME} = centos OR ${PSET_MODE} = uninstall" platform="INTEL64" invisible="0" id="3" depend="4.1" mandatory="0" core="0">
+            <Name>OpenCV* Libraries</Name>
+            <Description>An Intel-optimized API that is used for processing general computer vision-related flows and for providing analytics and machine learning capabilities on Intel® hardware.</Description>
+            <Selected>1</Selected>
+            <Layers>
+                <phonehome>
+                    <HideActivateButton>0</HideActivateButton>
+                    <HideOnLicenseTab>0</HideOnLicenseTab>
+                </phonehome>
+            </Layers>
+            <RPMProductFamily>intel-opencv_centos</RPMProductFamily>
+            <RPMProductCode>intel-opencv_centos-2018.5.455</RPMProductCode>
+            <Version>2018.5</Version>
+            <RPMProductRelease>455</RPMProductRelease>
+            <RPMProductArch>noarch</RPMProductArch>
+            <NONRPMProductCode>intel-opencv_centos-2018.5.455-2018.5-455.noarch.rpm</NONRPMProductCode>
+            <Abbr>intel-opencv_centos__noarch</Abbr>
+            <Data>136</Data>
+            <Type>rpm</Type>
+            <RPMFileDir>${PACKAGE_DIR}/rpm</RPMFileDir>
+            <Shared>${SHARED_SUITE}</Shared>
+        </Component>
+        <Component condition="( ${SYS_NAME} = yocto AND ${DISTRIB_CODENAME} = jethro ) OR ${PSET_MODE} = uninstall" platform="INTEL64" invisible="0" id="4" depend="4.1" mandatory="0" core="0">
+            <Name>OpenCV* Libraries</Name>
+            <Description>An Intel-optimized API that is used for processing general computer vision-related flows and for providing analytics and machine learning capabilities on Intel® hardware.</Description>
+            <Selected>1</Selected>
+            <Layers>
+                <phonehome>
+                    <HideActivateButton>0</HideActivateButton>
+                    <HideOnLicenseTab>0</HideOnLicenseTab>
+                </phonehome>
+            </Layers>
+            <RPMProductFamily>intel-opencv_yocto_mr3_rel</RPMProductFamily>
+            <RPMProductCode>intel-opencv_yocto_mr3_rel-2018.5.455</RPMProductCode>
+            <Version>2018.5</Version>
+            <RPMProductRelease>455</RPMProductRelease>
+            <RPMProductArch>noarch</RPMProductArch>
+            <NONRPMProductCode>intel-opencv_yocto_mr3_rel-2018.5.455-2018.5-455.noarch.rpm</NONRPMProductCode>
+            <Abbr>intel-opencv_yocto_mr3_rel__noarch</Abbr>
+            <Data>136</Data>
+            <Type>rpm</Type>
+            <RPMFileDir>${PACKAGE_DIR}/rpm</RPMFileDir>
+            <Shared>${SHARED_SUITE}</Shared>
+        </Component>
+        <Component condition="( ${SYS_NAME} = yocto AND ${DISTRIB_CODENAME} = sumo ) OR ( ${SYS_NAME} = ubuntu AND ${DISTRIB_CODENAME} = bionic ) OR ${PSET_MODE} = uninstall" platform="INTEL64" invisible="0" id="5" depend="4.1" mandatory="0" core="0">
+            <Name>OpenCV* Libraries</Name>
+            <Description>An Intel-optimized API that is used for processing general computer vision-related flows and for providing analytics and machine learning capabilities on Intel® hardware.</Description>
+            <Selected>1</Selected>
+            <Layers>
+                <phonehome>
+                    <HideActivateButton>0</HideActivateButton>
+                    <HideOnLicenseTab>0</HideOnLicenseTab>
+                </phonehome>
+            </Layers>
+            <RPMProductFamily>intel-opencv_ubuntu_18_rel</RPMProductFamily>
+            <RPMProductCode>intel-opencv_ubuntu_18_rel-2018.5.455</RPMProductCode>
+            <Version>2018.5</Version>
+            <RPMProductRelease>455</RPMProductRelease>
+            <RPMProductArch>noarch</RPMProductArch>
+            <NONRPMProductCode>intel-opencv_ubuntu_18_rel-2018.5.455-2018.5-455.noarch.rpm</NONRPMProductCode>
+            <Abbr>intel-opencv_ubuntu_18_rel__noarch</Abbr>
+            <Data>135</Data>
+            <Type>rpm</Type>
+            <RPMFileDir>${PACKAGE_DIR}/rpm</RPMFileDir>
+            <Shared>${SHARED_SUITE}</Shared>
+        </Component>
+    </Product>
+    <Product platform="INTEL64" id="5">
+        <Name>OpenVX*</Name>
+        <Description>A new standard API for production deployment of accelerated computer vision apps. It offers a higher level of abstraction, which allows portable, cross-platform performance.</Description>
+        <Layers>
+            <phonehome>
+                <HideActivateButton>0</HideActivateButton>
+                <HideOnLicenseTab>0</HideOnLicenseTab>
+            </phonehome>
+        </Layers>
+        <InstallDir>${OPENVINO_ROOT}</InstallDir>
+        <Component condition="${SYS_NAME} = centos OR ${PSET_MODE} = uninstall" platform="INTEL64" invisible="0" id="1" depend="" mandatory="0" core="0">
+            <Name>OpenVX* Runtime</Name>
+            <Description>A new standard API for production deployment of accelerated computer vision apps. It offers a higher level of abstraction, which allows portable, cross-platform performance.</Description>
+            <Selected>1</Selected>
+            <Layers>
+                <phonehome>
+                    <HideActivateButton>0</HideActivateButton>
+                    <HideOnLicenseTab>0</HideOnLicenseTab>
+                </phonehome>
+            </Layers>
+            <RPMProductFamily>intel-openvx_centos</RPMProductFamily>
+            <RPMProductCode>intel-openvx_centos-2018.5.455</RPMProductCode>
+            <Version>2018.5</Version>
+            <RPMProductRelease>455</RPMProductRelease>
+            <RPMProductArch>noarch</RPMProductArch>
+            <NONRPMProductCode>intel-openvx_centos-2018.5.455-2018.5-455.noarch.rpm</NONRPMProductCode>
+            <Abbr>intel-openvx_centos__noarch</Abbr>
+            <Data>520</Data>
+            <Type>rpm</Type>
+            <RPMFileDir>${PACKAGE_DIR}/rpm</RPMFileDir>
+            <Shared>${SHARED_SUITE}</Shared>
+        </Component>
+        <Component condition="${SYS_NAME} = ubuntu OR ${PSET_MODE} = uninstall" platform="INTEL64" invisible="0" id="2" depend="" mandatory="0" core="0">
+            <Name>OpenVX* Runtime</Name>
+            <Description>A new standard API for production deployment of accelerated computer vision apps. It offers a higher level of abstraction, which allows portable, cross-platform performance.</Description>
+            <Selected>1</Selected>
+            <Layers>
+                <phonehome>
+                    <HideActivateButton>0</HideActivateButton>
+                    <HideOnLicenseTab>0</HideOnLicenseTab>
+                </phonehome>
+            </Layers>
+            <RPMProductFamily>intel-openvx_ubuntu</RPMProductFamily>
+            <RPMProductCode>intel-openvx_ubuntu-2018.5.455</RPMProductCode>
+            <Version>2018.5</Version>
+            <RPMProductRelease>455</RPMProductRelease>
+            <RPMProductArch>noarch</RPMProductArch>
+            <NONRPMProductCode>intel-openvx_ubuntu-2018.5.455-2018.5-455.noarch.rpm</NONRPMProductCode>
+            <Abbr>intel-openvx_ubuntu__noarch</Abbr>
+            <Data>522</Data>
+            <Type>rpm</Type>
+            <RPMFileDir>${PACKAGE_DIR}/rpm</RPMFileDir>
+            <Shared>${SHARED_SUITE}</Shared>
+        </Component>
+        <Component condition="${SYS_NAME} = yocto OR ${PSET_MODE} = uninstall" platform="INTEL64" invisible="0" id="3" depend="" mandatory="0" core="0">
+            <Name>OpenVX* Runtime including IPU plugin for Yocto</Name>
+            <Description>A new standard API for production deployment of accelerated computer vision apps. It offers a higher level of abstraction, which allows portable, cross-platform performance.</Description>
+            <Selected>1</Selected>
+            <Layers>
+                <phonehome>
+                    <HideActivateButton>0</HideActivateButton>
+                    <HideOnLicenseTab>0</HideOnLicenseTab>
+                </phonehome>
+            </Layers>
+            <RPMProductFamily>intel-openvx_yocto</RPMProductFamily>
+            <RPMProductCode>intel-openvx_yocto-2018.5.455</RPMProductCode>
+            <Version>2018.5</Version>
+            <RPMProductRelease>455</RPMProductRelease>
+            <RPMProductArch>noarch</RPMProductArch>
+            <NONRPMProductCode>intel-openvx_yocto-2018.5.455-2018.5-455.noarch.rpm</NONRPMProductCode>
+            <Abbr>intel-openvx_yocto__noarch</Abbr>
+            <Data>531</Data>
+            <Type>rpm</Type>
+            <RPMFileDir>${PACKAGE_DIR}/rpm</RPMFileDir>
+            <Shared>${SHARED_SUITE}</Shared>
+        </Component>
+    </Product>
+    <Product platform="INTEL64" id="6">
+        <Name>Models</Name>
+        <Description>Includes a set of Intel's pre-trained models, a downloader of public Caffe* models and a demo script that illustrates the workflow of deploying a model</Description>
+        <Layers>
+            <phonehome>
+                <HideActivateButton>0</HideActivateButton>
+                <HideOnLicenseTab>0</HideOnLicenseTab>
+            </phonehome>
+        </Layers>
+        <InstallDir>${OPENVINO_ROOT}</InstallDir>
+        <Component platform="INTEL64" invisible="0" id="1" depend="" mandatory="0" core="0">
+            <Name>Pre-trained models</Name>
+            <Description>Includes a set of Intel's pre-trained models, a downloader of public Caffe* models and a demo script that illustrates the workflow of deploying a model</Description>
+            <Selected>1</Selected>
+            <Layers>
+                <phonehome>
+                    <HideActivateButton>0</HideActivateButton>
+                    <HideOnLicenseTab>0</HideOnLicenseTab>
+                </phonehome>
+            </Layers>
+            <RPMProductFamily>intel-models</RPMProductFamily>
+            <RPMProductCode>intel-models-2018.5.455</RPMProductCode>
+            <Version>2018.5</Version>
+            <RPMProductRelease>455</RPMProductRelease>
+            <RPMProductArch>noarch</RPMProductArch>
+            <NONRPMProductCode>intel-models-2018.5.455-2018.5-455.noarch.rpm</NONRPMProductCode>
+            <Abbr>intel-models__noarch</Abbr>
+            <Data>342</Data>
+            <Type>rpm</Type>
+            <RPMFileDir>${PACKAGE_DIR}/rpm</RPMFileDir>
+            <Shared>${SHARED_SUITE}</Shared>
+        </Component>
+    </Product>
+    <Product platform="INTEL64" id="7">
+        <Name>Algorithms</Name>
+        <Description>A set of demo applications that illustrate use of the Inference Engine to perform computer vision detection and recognition tasks on deep learning pre-trained models.</Description>
+        <Layers>
+            <phonehome>
+                <HideActivateButton>0</HideActivateButton>
+                <HideOnLicenseTab>0</HideOnLicenseTab>
+            </phonehome>
+        </Layers>
+        <Component condition="${SYS_NAME} = centos OR ${PSET_MODE} = uninstall" platform="INTEL64" invisible="0" id="1" depend="" mandatory="0" core="0">
+            <Name>Computer Vision Algorithms</Name>
+            <Description>A set of demo applications that illustrate use of the Inference Engine to perform computer vision detection and recognition tasks on deep learning pre-trained models.</Description>
+            <Selected>1</Selected>
+            <Layers>
+                <phonehome>
+                    <HideActivateButton>0</HideActivateButton>
+                    <HideOnLicenseTab>0</HideOnLicenseTab>
+                </phonehome>
+            </Layers>
+            <RPMProductFamily>intel-algorithms_centos</RPMProductFamily>
+            <RPMProductCode>intel-algorithms_centos-2018.5.455</RPMProductCode>
+            <Version>2018.5</Version>
+            <RPMProductRelease>455</RPMProductRelease>
+            <RPMProductArch>noarch</RPMProductArch>
+            <NONRPMProductCode>intel-algorithms_centos-2018.5.455-2018.5-455.noarch.rpm</NONRPMProductCode>
+            <Abbr>intel-algorithms_centos__noarch</Abbr>
+            <Data>97</Data>
+            <Type>rpm</Type>
+            <RPMFileDir>${PACKAGE_DIR}/rpm</RPMFileDir>
+            <Shared>${SHARED_SUITE}</Shared>
+        </Component>
+        <Component condition="${SYS_NAME} = ubuntu OR ${PSET_MODE} = uninstall" platform="INTEL64" invisible="0" id="2" depend="" mandatory="0" core="0">
+            <Name>Computer Vision Algorithms</Name>
+            <Description>A set of demo applications that illustrate use of the Inference Engine to perform computer vision detection and recognition tasks on deep learning pre-trained models.</Description>
+            <Selected>1</Selected>
+            <Layers>
+                <phonehome>
+                    <HideActivateButton>0</HideActivateButton>
+                    <HideOnLicenseTab>0</HideOnLicenseTab>
+                </phonehome>
+            </Layers>
+            <RPMProductFamily>intel-algorithms_ubuntu</RPMProductFamily>
+            <RPMProductCode>intel-algorithms_ubuntu-2018.5.455</RPMProductCode>
+            <Version>2018.5</Version>
+            <RPMProductRelease>455</RPMProductRelease>
+            <RPMProductArch>noarch</RPMProductArch>
+            <NONRPMProductCode>intel-algorithms_ubuntu-2018.5.455-2018.5-455.noarch.rpm</NONRPMProductCode>
+            <Abbr>intel-algorithms_ubuntu__noarch</Abbr>
+            <Data>97</Data>
+            <Type>rpm</Type>
+            <RPMFileDir>${PACKAGE_DIR}/rpm</RPMFileDir>
+            <Shared>${SHARED_SUITE}</Shared>
+        </Component>
+        <Component condition="${SYS_NAME} = yocto OR ${PSET_MODE} = uninstall" platform="INTEL64" invisible="0" id="3" depend="" mandatory="0" core="0">
+            <Name>Computer Vision Algorithms</Name>
+            <Description>A set of demo applications that illustrate use of the Inference Engine to perform computer vision detection and recognition tasks on deep learning pre-trained models.</Description>
+            <Selected>1</Selected>
+            <Layers>
+                <phonehome>
+                    <HideActivateButton>0</HideActivateButton>
+                    <HideOnLicenseTab>0</HideOnLicenseTab>
+                </phonehome>
+            </Layers>
+            <RPMProductFamily>intel-algorithms_yocto</RPMProductFamily>
+            <RPMProductCode>intel-algorithms_yocto-2018.5.455</RPMProductCode>
+            <Version>2018.5</Version>
+            <RPMProductRelease>455</RPMProductRelease>
+            <RPMProductArch>noarch</RPMProductArch>
+            <NONRPMProductCode>intel-algorithms_yocto-2018.5.455-2018.5-455.noarch.rpm</NONRPMProductCode>
+            <Abbr>intel-algorithms_yocto__noarch</Abbr>
+            <Data>97</Data>
+            <Type>rpm</Type>
+            <RPMFileDir>${PACKAGE_DIR}/rpm</RPMFileDir>
+            <Shared>${SHARED_SUITE}</Shared>
+        </Component>
+    </Product>
+    <Product platform="INTEL64" id="8">
+        <Name>Intel(R) Media SDK</Name>
+        <Description>Intel(R) Media SDK provides software development tools and libraries needed to develop enterprise grade media solutions on Intel(R) Xeon(R) and Core(TM) processor-based platforms. For OpenVINO(TM) toolkit components, this SDK offers access to hardware accelerated video codecs and frame processing.</Description>
+        <Layers>
+            <phonehome>
+                <HideActivateButton>0</HideActivateButton>
+                <HideOnLicenseTab>0</HideOnLicenseTab>
+            </phonehome>
+        </Layers>
+        <Component condition="${EUID} = 0" platform="INTEL64" invisible="0" id="1" depend="" mandatory="0" core="0">
+            <Name>Intel(R) Media SDK</Name>
+            <Description>Intel(R) Media SDK provides software development tools and libraries needed to develop enterprise grade media solutions on Intel(R) Xeon(R) and Core(TM) processor-based platforms. For OpenVINO(TM) toolkit components, this SDK offers access to hardware accelerated video codecs and frame processing.</Description>
+            <Selected>1</Selected>
+            <Layers>
+                <phonehome>
+                    <HideActivateButton>0</HideActivateButton>
+                    <HideOnLicenseTab>0</HideOnLicenseTab>
+                </phonehome>
+            </Layers>
+            <RPMProductFamily>intel-media_stack</RPMProductFamily>
+            <RPMProductCode>intel-media_stack-2018.5.455</RPMProductCode>
+            <Version>2018.5</Version>
+            <RPMProductRelease>455</RPMProductRelease>
+            <RPMProductArch>noarch</RPMProductArch>
+            <NONRPMProductCode>intel-media_stack-2018.5.455-2018.5-455.noarch.rpm</NONRPMProductCode>
+            <Abbr>intel-media_stack__noarch</Abbr>
+            <InstallDir>/</InstallDir>
+            <Data>111</Data>
+            <Type>rpm</Type>
+            <RPMFileDir>${PACKAGE_DIR}/rpm</RPMFileDir>
+        </Component>
+    </Product>
+    <Product platform="INTEL64" id="9">
+        <Name>Documentation</Name>
+        <Description/>
+        <Layers>
+            <phonehome>
+                <HideActivateButton>0</HideActivateButton>
+                <HideOnLicenseTab>0</HideOnLicenseTab>
+            </phonehome>
+        </Layers>
+        <InstallDir>${OPENVINO_ROOT}</InstallDir>
+        <Component platform="INTEL64" invisible="1" id="1" depend="" mandatory="1" core="0">
+            <Name>Documentation</Name>
+            <Description>Product Documentation</Description>
+            <Selected>1</Selected>
+            <Layers>
+                <phonehome>
+                    <HideActivateButton>0</HideActivateButton>
+                    <HideOnLicenseTab>0</HideOnLicenseTab>
+                </phonehome>
+            </Layers>
+            <RPMProductFamily>intel-docs</RPMProductFamily>
+            <RPMProductCode>intel-docs-2018.5.455</RPMProductCode>
+            <Version>2018.5</Version>
+            <RPMProductRelease>455</RPMProductRelease>
+            <RPMProductArch>noarch</RPMProductArch>
+            <NONRPMProductCode>intel-docs-2018.5.455-2018.5-455.noarch.rpm</NONRPMProductCode>
+            <Abbr>intel-docs__noarch</Abbr>
+            <Data>15</Data>
+            <Type>rpm</Type>
+            <RPMFileDir>${PACKAGE_DIR}/rpm</RPMFileDir>
+            <Shared>${SHARED_SUITE}</Shared>
+        </Component>
+    </Product>
+    <Product platform="INTEL64" id="10">
+        <Name>GFX Driver</Name>
+        <Description/>
+        <Layers>
+            <phonehome>
+                <HideActivateButton>0</HideActivateButton>
+                <HideOnLicenseTab>0</HideOnLicenseTab>
+            </phonehome>
+        </Layers>
+        <InstallDir>${OPENVINO_ROOT}</InstallDir>
+        <Component platform="INTEL64" invisible="1" id="1" depend="" mandatory="1" core="0">
+            <Name>Intel® Graphics for Linux*</Name>
+            <Description>Intel® Graphics for Linux*</Description>
+            <Selected>1</Selected>
+            <Layers>
+                <phonehome>
+                    <HideActivateButton>0</HideActivateButton>
+                    <HideOnLicenseTab>0</HideOnLicenseTab>
+                </phonehome>
+            </Layers>
+            <RPMProductFamily>intel-gfx_driver</RPMProductFamily>
+            <RPMProductCode>intel-gfx_driver-2018.5.455</RPMProductCode>
+            <Version>2018.5</Version>
+            <RPMProductRelease>455</RPMProductRelease>
+            <RPMProductArch>noarch</RPMProductArch>
+            <NONRPMProductCode>intel-gfx_driver-2018.5.455-2018.5-455.noarch.rpm</NONRPMProductCode>
+            <Abbr>intel-gfx_driver__noarch</Abbr>
+            <Data>99</Data>
+            <Type>rpm</Type>
+            <RPMFileDir>${PACKAGE_DIR}/rpm</RPMFileDir>
+            <Shared>${SHARED_SUITE}</Shared>
+        </Component>
+    </Product>
+    <Product platform="INTEL64" id="11">
+        <Name>Intel(R) FPGA for OpenCL(TM) software technology</Name>
+        <Description>The Intel(R) FPGA RTE for OpenCL(TM) provides utilities, host runtime libraries, drivers, and RTE-specific libraries and files.</Description>
+        <Layers>
+            <phonehome>
+                <HideActivateButton>0</HideActivateButton>
+                <HideOnLicenseTab>0</HideOnLicenseTab>
+            </phonehome>
+        </Layers>
+        <Component condition="${EUID} = 0" platform="INTEL64" invisible="0" id="1" depend="" mandatory="0" core="0">
+            <Name>Intel(R) FPGA for OpenCL(TM) software technology</Name>
+            <Description>The Intel(R) FPGA RTE for OpenCL(TM) provides utilities, host runtime libraries, drivers, and RTE-specific libraries and files.</Description>
+            <Selected>1</Selected>
+            <Layers>
+                <phonehome>
+                    <HideActivateButton>0</HideActivateButton>
+                    <HideOnLicenseTab>0</HideOnLicenseTab>
+                </phonehome>
+            </Layers>
+            <RPMProductFamily>intel-opencl_rte</RPMProductFamily>
+            <RPMProductCode>intel-opencl_rte-2018.0.555</RPMProductCode>
+            <Version>2018.0</Version>
+            <RPMProductRelease>555</RPMProductRelease>
+            <RPMProductArch>noarch</RPMProductArch>
+            <NONRPMProductCode>intel-opencl_rte-2018.0.555-2018.0-555.noarch.rpm</NONRPMProductCode>
+            <Abbr>intel-opencl_rte__noarch</Abbr>
+            <Data>1</Data>
+            <Type>rpm</Type>
+            <RPMFileDir>${PACKAGE_DIR}/rpm</RPMFileDir>
+        </Component>
+    </Product>
+    <Product platform="INTEL64" id="12">
+        <Name>Pre-compiled FPGA bitstream samples</Name>
+        <Description>Pre-compiled FPGA bitstream samples</Description>
+        <Layers>
+            <phonehome>
+                <HideActivateButton>0</HideActivateButton>
+                <HideOnLicenseTab>0</HideOnLicenseTab>
+            </phonehome>
+        </Layers>
+        <Component platform="INTEL64" invisible="0" id="1" depend="" mandatory="0" core="0">
+            <Name>Intel(R) Arria(R) 10 GX FPGA Development Kit</Name>
+            <Description>Pre-compiled bitstream samples for Intel(R) Arria(R) 10 GX FPGA Development Kit.</Description>
+            <Selected>1</Selected>
+            <Layers>
+                <phonehome>
+                    <HideActivateButton>0</HideActivateButton>
+                    <HideOnLicenseTab>0</HideOnLicenseTab>
+                </phonehome>
+            </Layers>
+            <RPMProductFamily>intel-a10_devkit_bitstreams</RPMProductFamily>
+            <RPMProductCode>intel-a10_devkit_bitstreams-2018.0.555</RPMProductCode>
+            <Version>2018.0</Version>
+            <RPMProductRelease>555</RPMProductRelease>
+            <RPMProductArch>noarch</RPMProductArch>
+            <NONRPMProductCode>intel-a10_devkit_bitstreams-2018.0.555-2018.0-555.noarch.rpm</NONRPMProductCode>
+            <Abbr>intel-a10_devkit_bitstreams__noarch</Abbr>
+            <Data>1</Data>
+            <Type>rpm</Type>
+            <RPMFileDir>${PACKAGE_DIR}/rpm</RPMFileDir>
+        </Component>
+        <Component platform="INTEL64" invisible="0" id="2" depend="" mandatory="0" core="0">
+            <Name>Intel(R) Programmable Acceleration Card with Intel(R) Arria(R) 10 GX FPGA</Name>
+            <Description>Pre-compiled bitstream samples for Intel(R) Programmable Acceleration Card with Intel® Arria(R) 10 GX FPGA.</Description>
+            <Selected>1</Selected>
+            <Layers>
+                <phonehome>
+                    <HideActivateButton>0</HideActivateButton>
+                    <HideOnLicenseTab>0</HideOnLicenseTab>
+                </phonehome>
+            </Layers>
+            <RPMProductFamily>intel-rc_devkit_bitstreams</RPMProductFamily>
+            <RPMProductCode>intel-rc_devkit_bitstreams-2018.0.555</RPMProductCode>
+            <Version>2018.0</Version>
+            <RPMProductRelease>555</RPMProductRelease>
+            <RPMProductArch>noarch</RPMProductArch>
+            <NONRPMProductCode>intel-rc_devkit_bitstreams-2018.0.555-2018.0-555.noarch.rpm</NONRPMProductCode>
+            <Abbr>intel-rc_devkit_bitstreams__noarch</Abbr>
+            <Data>1</Data>
+            <Type>rpm</Type>
+            <RPMFileDir>${PACKAGE_DIR}/rpm</RPMFileDir>
+        </Component>
+        <Component platform="INTEL64" invisible="0" id="3" depend="" mandatory="0" core="0">
+            <Name>Intel(R) Vision Accelerator Design with Intel(R) FPGA</Name>
+            <Description>Pre-compiled bitstream samples for Intel(R) Vision Accelerator Design with Intel(R) FPGA</Description>
+            <Selected>1</Selected>
+            <Layers>
+                <phonehome>
+                    <HideActivateButton>0</HideActivateButton>
+                    <HideOnLicenseTab>0</HideOnLicenseTab>
+                </phonehome>
+            </Layers>
+            <RPMProductFamily>intel-pl_devkit_bitstreams</RPMProductFamily>
+            <RPMProductCode>intel-pl_devkit_bitstreams-2018.0.555</RPMProductCode>
+            <Version>2018.0</Version>
+            <RPMProductRelease>555</RPMProductRelease>
+            <RPMProductArch>noarch</RPMProductArch>
+            <NONRPMProductCode>intel-pl_devkit_bitstreams-2018.0.555-2018.0-555.noarch.rpm</NONRPMProductCode>
+            <Abbr>intel-pl_devkit_bitstreams__noarch</Abbr>
+            <Data>1</Data>
+            <Type>rpm</Type>
+            <RPMFileDir>${PACKAGE_DIR}/rpm</RPMFileDir>
+        </Component>
+    </Product>
+    <Product platform="INTEL64" invisible="1" id="13" mandatory="1">
+        <Name>Uninstaller</Name>
+        <Description>Uninstaller</Description>
+        <Component platform="INTEL64" invisible="1" id="1" mandatory="1">
+            <Name>Uninstaller</Name>
+            <Description>Uninstaller</Description>
+            <RPMFileDir>${PACKAGE_DIR}/rpm</RPMFileDir>
+            <Version>2018.5</Version>
+            <RPMProductRelease>455</RPMProductRelease>
+            <Selected>1</Selected>
+            <NONRPMProductCode>intel-openvino_base-pset-2018.5.455-2018.5-455.noarch.rpm</NONRPMProductCode>
+            <Type>rpm</Type>
+            <RPMProductCode>intel-openvino_base-pset-2018.5.455</RPMProductCode>
+            <Abbr>intel-openvino_base-pset</Abbr>
+            <Data>49</Data>
+        </Component>
+    </Product>
+</MediaConfig>
