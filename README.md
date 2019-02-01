@@ -22,3 +22,5 @@
 * [Openvino linux insallation](https://software.intel.com/en-us/articles/OpenVINO-Install-Linux)
 
 * [Openvino inference engine samples](https://software.intel.com/en-us/articles/OpenVINO-IE-Samples)
+
+* [Opemvino model optimizer](https://software.intel.com/en-us/articles/OpenVINO-ModelOptimizer)
